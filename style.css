@@ -1,0 +1,928 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+
+    
+}
+
+body {
+  /*   font-family: Arial, sans-serif; */
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+header.menu-superior {
+    max-width: 100%;
+    position: relative;
+    position: sticky;
+    top: 0; /* Se quedará pegado cuando llegue a 0px desde la parte superior */
+    z-index: 1000; /* Asegura que el menú esté por encima del contenido */
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    
+}
+
+.menu-superior .logo h1 {
+    font-size: 24px;
+}
+
+.menu-superior nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-superior nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+
+.menu-superior nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.seccion-principal {
+    display: flex;
+    justify-content: space-between;
+  
+    padding: 40px;
+    background-color:black; /* Color de fondo similar */
+    height: 750px;
+    color:white;
+}
+
+.seccion-principal .texto-izquierda {
+    max-width: 100%;
+    
+}
+
+.seccion-principal h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.seccion-principal p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color:white;
+}
+
+.seccion-principal button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color:transparent;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.seccion-principal button:hover {
+    background-color:  black;
+    color: white;
+   
+}
+.contenedor-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("http://wallpapers4screen.com/img/original/20413/new-york-night-manhattan-brooklyn-brooklyn-bridge.jpg");
+    /* opacity: 1.0; */
+    background-attachment: fixed;
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo sin repetirse */
+    background-repeat: no-repeat;
+    background-position: center; /* Centra la imagen del fondo */
+
+    /* Ajuste para ocupar todo el ancho y alto */
+    width: 100vw;  /* 100% del ancho de la ventana */
+    height: 600px;/* 100% de la altura de la ventana */
+    position: relative;
+    top: -40px;
+    /* right: 40px; */
+
+    /* Elimina márgenes y paddings que puedan separarlo de otros elementos */
+    margin: 0;
+    padding: 0;
+
+    /* Otras configuraciones */
+    /* border-radius: 20px; */
+   
+}
+
+/* Capa semitransparente */
+.contenedor-principal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    height: 600px;
+    width: 100%;
+    background-color: transparent; /* Fondo blanco semitransparente */
+  /* Asegura que esté por debajo del contenido */
+}
+
+
+
+.texto{
+    background-color: black;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top: 270px;
+
+}
+
+.texto {
+    flex: 1;
+    padding: 20px;
+}
+
+.texto h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.texto p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.texto button {
+    background-color:yellow;
+    color:black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+    position: relative;
+    left: 200px;
+}
+
+#boton_unico1:hover{
+    background-color: rgb(47, 24, 24);
+    color: white;
+    transform: scale(1.2);
+
+}
+
+
+.imagenes {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+
+
+/* .imagen-derecha img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+} */
+
+.nuevo{
+    position: relative;
+    left: 40px;
+    margin-top: -39px;
+    width:550px;
+    height: 350px;
+    overflow: hidden;
+    /* border-top-left-radius: 50% 100%; */
+    border-top-left-radius: 50% 100%; /* Esquina superior izquierda */
+    border-bottom-left-radius: 50% 100%;
+   /*  border-top-right-radius: 50% 100%;
+    border-bottom-right-radius: 50% 100%; */
+    
+    /* transform: rotate(15deg); Rota la imagen 15 grados */
+    
+    /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); Forma triangular */
+    /* clip-path: polygon(60% 0%, 100% 25%, 100% 65%, 50% 100%, 0% 65%, 0% 25%); Forma hexagonal */
+}
+
+.nuevo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* .unico {
+    color: rgb(0, 242, 255);
+} */
+
+/* .boton_unico{
+    background-color: transparent;
+
+} */
+
+
+.seccion-secundario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    background-color:white; /* Color de fondo similar */
+    height: 400px;
+}
+
+#uni{
+    position: relative;
+    left:   500px;
+    margin-top: -120px;
+
+}
+/* .seccion-secundario .texto-centrado {
+    position: relative;
+    left: 500px;
+    text-align: center;
+} */
+
+/* .seccion-secundario h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.seccion-secundario p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+ */
+
+.contenedor_centrado{
+    background-color: rgb(241, 241, 241);
+    width: 450px;
+    height: 250px;
+    position: relative;
+    top: 45px;
+    right: 500px;
+    border-radius: 35px;
+
+    text-align: center;
+}
+
+.imagen_2 {
+    width: 180px;
+    height: 100%;
+    position: relative;
+    
+    right: 135px;
+    border-top-left-radius: 34px; /* Esquina superior izquierda */
+    border-bottom-left-radius: 34px; /* Esquina inferior izquierda */
+    /* border-radius: 34px; */
+}
+#titulo{
+    margin-top: -240px;
+    position: relative;
+
+    
+    left: 105px;
+}
+#parrafo{
+    position: relative;
+    left: 102px;
+}
+.boton_2{
+    position: relative;
+    left: 100px;
+    top: 20px;
+    background-color:yellow;
+    color:black;
+    width: 60px;
+    height: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+ .boton_2:hover {
+    background-color: black;
+        color: white;
+        transform: scale(1.2);
+   
+}
+
+
+.seccion_tercero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    background-color: rgb(245, 244, 244); /* Color de fondo similar */
+    height: 600px;
+}
+
+
+#p {
+    color: black;
+    position: relative;
+    left: 270px;
+    margin-top: -70px;
+}
+
+.viajar {
+    width: 300px;
+    height: 350px;
+    position: relative;
+    left: 400px;
+}
+.viajar1 {
+    width: 300px;
+    height: 350px;
+    position: relative;
+    left: 450px;
+}
+#w_unico{
+    
+    position: relative;
+    left: 240px;
+    top: 20px;
+}
+#a_unico{
+    position: relative;
+    left: 600px;
+}
+
+.p_1{
+    position: relative;
+    left: 230px;
+    top: 30px;
+    
+}
+
+.p_2{
+    position: relative;
+    left: 640px;
+    margin-top: -7px;
+    
+}
+.boton_whasapp{
+    position: relative;
+    left: 370px;
+    top: 10px;
+    cursor: pointer;
+    background-color: yellow ;
+    color:black;
+    border-radius: 15px;
+    width: 220px;
+    height: 30px;
+
+}
+.boton_whasapp:hover {
+    background-color: black;
+        color:white;
+        transform: scale(1.2);
+    }
+
+.boton_app{
+    position: relative;
+left: 520px;
+top: 10px;
+cursor: pointer;
+background-color: yellow ;
+color:black;
+border-radius: 15px;
+width: 220px;
+height: 30px;
+}
+.boton_app:hover {
+    background-color:black;
+    color:white;
+    transform: scale(1.2);
+    }
+
+
+/* 
+.seccion_cuarta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    background-color: rgb(255, 0, 0); /* Color de fondo similar 
+    height: 300px;
+} */
+
+.contenedor {
+    display: flex;
+    justify-content: flex-start;
+    align-items: normal;
+    flex-wrap: nowrap; /* Evita que los elementos se envuelvan en la siguiente línea */
+    padding: 20px;
+    background-color:white;
+    overflow-x: auto; /* Permite hacer scroll horizontal si los elementos no caben en una fila */
+}
+
+.img_1{
+    border-radius: 10px;
+}
+
+.caja {
+
+    background-color: #f4f4f4;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.caja h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.caja ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.caja ul li {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #000000;
+    text-align: left;
+}
+
+
+#contenedor_quinto {
+    background-color: white;
+    height: 450px;
+    width: 100%; /* Asegúrate de que ocupe todo el ancho */
+    margin: 0; /* Elimina posibles márgenes */
+    padding: 0; /* Elimina posibles rellenos */
+    display: flex; /* Para alinear los elementos internamente si es necesario */
+    justify-content: space-between; /* Asegura que los elementos se distribuyan de manera uniforme */
+    align-items: center; /* Centra los elementos verticalmente */
+}
+.titulo_unico{
+    margin-top: -200px;
+    position: relative;
+    left: 750px;
+}
+#parrafo_unico {
+    margin: 0;
+    padding: 0;
+    width: 40%; /* /* Ajusta el ancho del párrafo  */
+    position: relative;
+    left: 150px;
+    }
+
+.mapa {
+   width: 350px;
+    height: 300px;
+   max-width: 100%; /* Asegúrate de que no se desborde del contenedor  */
+   position: relative;
+   right: 300px;
+  
+} 
+
+/* 
+.contenedor_sexto{
+    background-color: red;
+    height:200px ;
+    width: 100%;
+} */
+
+.contenedor_sexto {
+    
+    padding: 20px;
+    background-color: rgb(241, 241, 241);
+}
+
+/* Un nuevo contenedor para el h3 y p */
+.contenedor_sexto {
+    padding: 20px;
+    background-color: rgb(241, 241, 241);
+}
+
+/* Un nuevo contenedor para el h3 y p */
+.contenedor_texto {
+    margin-bottom: 20px; /* Espacio entre el texto y los contenedores */
+}
+
+#h_sexto {
+    text-align: center; /* Centra el texto del h3 */
+}
+
+.caja_contenedores {
+    display: flex;
+    justify-content: flex-start; /* Alinea los contenedores al inicio */
+    align-items: flex-start; /* Alinea los contenedores por la parte superior */
+    flex-wrap:nowrap; /* Permite que los elementos se envuelvan en la siguiente línea si no caben en una fila */
+    overflow-x: hidden; /* Evita el scroll horizontal innecesario */
+    gap: 15px; /* Espacio entre los elementos */
+}
+
+.caja_1 {
+    flex: 1 1 20%; /* Permite que las cajas crezcan y se reduzcan, ocupando el 20% del ancho disponible */
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box; /* Incluye padding y border en el ancho total del elemento */
+}
+
+.caja_1 img {
+    width: 100px;
+    height: auto;
+    display: block; /* Hace que la imagen ocupe un bloque completo */
+    margin: 0 auto 10px; /* Centra la imagen horizontalmente y añade margen en la parte inferior */
+}
+
+.caja_1 h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center; /* Centra el texto del h3 */
+}
+
+.caja_1 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.caja_1 ul li {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #666;
+    text-align: left;
+}
+
+.caja_1 ul li::before {
+    content: "✔";
+    margin-right: 10px;
+    color:rgb(252, 248,34) ;/*  */
+}
+
+/* Estilos responsivos */
+@media (max-width: 900px) {
+    .caja_1 {
+        flex: 1 1 45%; /* Ajusta el ancho para pantallas medianas */
+    }
+}
+
+@media (max-width: 600px) {
+    .caja_1 {
+        flex: 1 1 100%; /* Ajusta el ancho para pantallas pequeñas */
+    }
+}
+
+/* 
+.seccion_septima{
+    background-color: white;
+    height: 400px;
+}
+.contenedor_septimo{
+    background-color:white;
+    height: 50px;
+    padding: 10px;
+  
+}
+
+#h_septimo{
+    position: relative;
+    top: 20px;
+    left: 400px;
+}
+
+.contenedor_septimo2{
+    border-radius: 15px;
+    background-color:rgb(235, 233, 233);
+    width: 730px;
+    height: 300px;
+    position: absolute; /* Posición absoluta respecto al contenedor padre 
+    left: 400px;
+   
+    
+
+  /*   align-items: center;
+    text-align: center; 
+}
+
+#img_septima{
+    width: 50%;
+    height: 300px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+   
+}
+#p_septimo{
+    position: relative;
+    left: 400px;
+    margin-top: -250px; 
+}
+
+.boton_septimo{
+    position: relative;
+    left: 500px;
+    background-color:rgb(89, 83, 235) ;
+    color: white;
+    width: 80px;
+    border-radius: 10px;
+} */
+
+.seccion_septima {
+    background-color: white;
+    height: 500px;
+    display: flex;
+    justify-content: center; /* Centra todo el contenido horizontalmente */
+    align-items: center;     /* Centra todo el contenido verticalmente */
+}
+
+.contenedor_septimo {
+    background-color: white;
+    height: 50px;
+    padding: 10px;
+   
+}
+
+#h_septimo {
+    margin: 0;
+    position: relative;
+    left: 150px;
+    margin-top: -220px;
+}
+
+.contenedor_septimo2 {
+    border-radius: 15px;
+    background-color: rgb(235, 233, 233);
+    width: 800px; /* Ocupa todo el ancho disponible del contenedor padre */
+    max-width: 900px; /* Establece un ancho máximo para evitar que sea demasiado ancho */
+    display: flex;
+    /* align-items: center; Alinea los elementos verticalmente en el centro */
+    
+}
+
+#img_septima {
+    width: 50%; /* La imagen ocupará la mitad del contenedor */
+    height: 100%; /* Ocupará el 100% de la altura del contenedor */
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#p_septimo {
+    position: relative;
+    top: 80px;
+    left: 30px;
+}
+
+.boton_septimo {
+    background-color: yellow;
+    color:black;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: 200px;
+    right: 200px;
+    height: 30px;
+    width: 100px;
+    transform: scale(1);
+
+   
+}
+
+.boton_septimo:hover{
+    background-color: black;
+    color:white;
+    transform: scale(1.2);
+}
+
+
+.contenedor_octavo {
+    background-color:gray;
+    height: 100px;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center;     /* Centra el contenido verticalmente */
+}
+
+#h_octavo {
+    position: relative;
+    animation: parpadeo 10s infinite; /* La animación total dura 12 segundos */
+    font-size: 24px;
+    color: white;
+    margin: 0;
+}
+
+/* Animación personalizada */
+@keyframes parpadeo {
+    0% {
+        opacity: 1;
+        transform: translateX(0); /* Comienza en su posición original */
+    }
+    50% {
+        opacity: 1; 
+        transform: translateX(0); /* Se mantiene en su posición */
+    }
+    83% {
+        opacity: 0; /* Sigue invisible */
+        transform: translateX(-100px); /* Comienza a moverse desde la izquierda */
+    }
+    100% {
+        opacity: 1; /* Vuelve a ser visible */
+        transform: translateX(0); /* Termina en su posición original */
+    }
+}
+
+/* Contenedor principal noveno */
+.contenedor_noveno {
+    background-color: white;
+    height: 200px;
+    width: 100%;
+    overflow: hidden; /* Asegura que el contenido no desborde el contenedor */
+    white-space: nowrap;
+}
+
+#c_noveno {
+    background-color: white;
+    height: 80px;
+    width: 700px;
+    margin: 0 auto; /* Centramos el contenedor #c_noveno horizontalmente */
+    overflow: hidden; /* Ocultamos el contenido que sale del contenedor */
+    position: relative; 
+    top: 50px;
+}
+
+#d_img {
+    width: 100px;
+    height: 70px;
+}
+
+/* Contenedor de imágenes desplazables */
+.desplazamiento {
+    display: inline-block;
+    animation: mover 25s linear infinite; /* Anima el movimiento con duración de 10 segundos */
+    white-space: nowrap; /* Evita que las imágenes se envuelvan a otra línea */
+}
+
+.desplazamiento img {
+    width: 200px;
+    height: auto;
+    display: inline-block;
+    margin-right: 10px; /* Espaciado entre imágenes */
+}
+
+/* Efecto de movimiento continuo */
+@keyframes mover {
+    0% {
+        transform: translateX(0); /* Comienza desde la posición inicial */
+    }
+    50% {
+        transform: translateX(-50%); /* Se desplaza a la mitad del contenedor */
+    }
+    
+}
+
+
+
+  
+
+/* Contenedor décimo */
+.contenedor_decimo {
+    background-color:black;
+    color: white;
+    height: 450px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#h_{
+    position: relative;
+    top: 40px;
+    left: 410px;
+}
+
+#p_noveno {
+    position: relative;
+    top: 20px;
+    left: 150px;
+}
+
+#p_noveno2 {
+    position: relative;
+    left: 370px;
+    margin-top: -315px; 
+}
+
+#p_noveno3 {
+    position: relative;
+    left: 370px;
+}
+
+#p_noveno4 {
+    position: relative;
+    left: 650px; 
+    margin-top: -265px; 
+}
+
+#p_noveno5 {
+    position: relative;
+    left: 650px;
+}
+
+
+.contenedor_decimo2 {
+    background-color: rgb(255, 255, 255);
+    width: 3px;
+    height: 300px;
+    position: relative;
+    left: 970px;
+    margin-top: -320px;
+}
+
+
+.img_novena {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    position: relative;
+    left: 1050px;
+}
+
+
+.img_decimo2, .img_decimo3, .img_decimo4, #img_decimo5, #img_decimo6 {
+    width: 150px;
+    height: 50px;
+    position: relative;
+    left: 1050px;
+    top: -250px;
+    margin: 20px 0; 
+    margin-right: 10px;
+}
+
+#img_decimo6 {
+    left: 1130px; 
+    top: -260px; 
+}
+
+/* Estilo del contenedor final */
+#contenedor_final {
+    background-color: rgb(90, 87, 87);
+    height: 80px;
+    width: 100%;
+    color: white;
+    overflow: hidden; /* Evita que se salga contenido */
+}
+
+
+#h_final {
+    position: relative;
+    left: 150px;
+    top: 25px;
+}
+
+#p_final {
+    position: relative;
+    left: 280px;
+}
+
+#p_final1 {
+    position: relative;
+    left: 550px;
+    top: -20px;
+}
+
+#p_final2 {
+    position: relative;
+    left: 750px;
+    top: -42px;
+}
+
+/* Estilo de las imágenes dentro del contenedor final */
+.img_final {
+    width: 20px;
+    height: 15px;
+    position: relative;
+    left: 1200px;
+    top: -70px;
+    margin: 10px;
+}
+
+/* Contenedor adicional para centrar elementos */
+.contenedor_final1 {
+    background-color: white;
+    height: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+/* Posicionamiento de párrafo dentro del contenedor_final1 */
+#p1 {
+    position: relative;
+    top: 5px;
+}
