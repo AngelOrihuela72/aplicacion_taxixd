@@ -1,0 +1,397 @@
+*{
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#fondo_pag{
+    background-color: white;
+}
+
+#encabezado2{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    padding-top: 25px;
+}
+
+#xd2{
+    height: 10px;
+    background: yellow;
+    border-radius: 160px 160px 160px 160px;
+    position: relative;
+    width:75%;
+    bottom: 85px;
+}
+
+#titulo2{
+    text-align: left;
+    color: white;
+}
+
+#fondo_tbody{
+    background-color: white;
+    width: 98%;
+    height: 500px;
+    position: relative;
+    bottom: 10px;
+}
+
+
+#tamaño_cuadro{
+    border: 2px solid;
+    width: 400px;
+    height: 624px;
+    position: relative;
+    left: 1px;
+    top: 1px;
+}
+
+#imagen_perfil{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 80px;
+    bottom: -1px;
+}
+
+#texto_2{
+    position: relative;
+    top: 8px;
+}
+
+#texto_3{
+    position: relative;
+    top: 16px;
+}
+
+#texto_4{
+    position: relative;
+    top: 24px;
+}
+
+#maps{
+    background-color: gray;
+    width: 550px;
+    height: 550px;
+    position: relative;
+    left: 799px;
+    bottom: 403px;
+}
+
+#texto_bienve{
+    position: relative;
+    bottom: 320px;
+    left: 80px;
+    font-size: xx-large;
+}
+
+#tuperfil{
+    position: relative;
+    left: 10px;
+    top: 70px;
+}
+
+#agregartarjeta{
+    position: relative;
+    top: 42px;
+    left: 30px;
+}
+
+#verificartelefono{
+    position: relative;
+    top: 50px;
+    left: 30px;
+}
+
+#chulo1{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 80px;
+}
+
+#chulo2{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 120px;
+    right: 34px;
+}
+
+#misviajes{
+    position: relative;
+    top: 90px;
+    left: 10px;
+}
+
+
+
+#encabezadomisviajes{
+    width: 941px;
+    height: 626px;
+    border: 1px solid;
+    position: relative;
+    bottom: 627px;
+    left: 406px;
+}
+
+#filtro{
+    position: relative;
+    bottom: 32px;
+}
+
+#filtrarviajes{
+    position: relative;
+    bottom: 70px;
+    left: 50px;
+}
+
+#filtrarviajes:hover{
+    text-decoration: underline;
+}
+
+#conductor{
+    position: relative;
+    left: 20px;
+}
+
+#conductor:hover{
+    text-decoration: underline;
+}
+
+#tarifa{
+    position: relative;
+    left: 120px;
+    bottom: 22px;
+}
+
+#tarifa:hover{
+    text-decoration: underline;
+}
+
+#recogida{
+    position: relative;
+    left: 190px;
+    bottom: 44px;
+}
+
+#recogida:hover{
+    text-decoration: underline;
+}
+
+#vehiculo{
+    position: relative;
+    left: 280px;
+    bottom: 66px;
+}
+
+#vehiculo:hover{
+    text-decoration: underline;
+}
+
+#ciudad{
+    position: relative;
+    left: 365px;
+    bottom: 88px;
+}
+
+#ciudad:hover{
+    text-decoration: underline;
+}
+
+#metododepago{
+    position: relative;
+    left: 440px;
+    bottom: 110px;
+}
+
+#metododepago:hover{
+    text-decoration: underline;
+}
+
+#imagenmaps{
+    position: relative;
+    bottom: 80px;
+}
+
+#fecha{
+    position: relative;
+    left: 750px;
+    bottom: 132px;
+}
+
+
+#boton_1{
+    background-color: yellow;
+    position: relative;
+    bottom: 100px;
+    left: 10px;
+    border-radius: 7px;
+    width: 200px;
+    height: 30px;
+}
+
+
+#boton_1:hover{
+    text-decoration: underline;
+}
+
+#boton_2{
+    background-color: yellow;
+    position: relative;
+    bottom: 100px;
+    left: 30px;
+    border-radius: 7px;
+    width: 200px;
+    height: 30px;
+}
+
+#boton_2:hover{
+    text-decoration: underline;
+}
+
+
+/* Contenedor décimo */
+.contenedor_decimo {
+    background-color: black;
+    color: white;
+    height: 450px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 120px;
+}
+
+#p_noveno {
+    position: relative;
+    top: -320px;
+    left: 150px;
+    color: white;
+
+}
+
+#p_noveno2 {
+    position: relative;
+    left: 370px;
+    top: -345px;
+    margin-top: -315px; 
+    color: white;
+}
+
+#p_noveno3 {
+    position: relative;
+    left: 370px;
+    top: -340px;
+    color: white;
+}
+
+#p_noveno4 {
+    position: relative;
+    left: 650px; 
+    margin-top: -615px; 
+    color: white;
+}
+
+#p_noveno5 {
+    position: relative;
+    left: 650px;
+    color: white;
+}
+
+
+.contenedor_decimo2 {
+    background-color: rgb(255, 255, 255);
+    width: 3px;
+    height: 300px;
+    position: relative;
+    left: 970px;
+    margin-top: -350px;
+}
+
+
+.img_novena {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    position: relative;
+    left: 1050px;
+}
+
+
+.img_decimo2, .img_decimo3, .img_decimo4, #img_decimo5, #img_decimo6 {
+    width: 150px;
+    height: 50px;
+    position: relative;
+    left: 1025px;
+    top: -250px;
+    margin: 20px 0; 
+}
+
+#img_decimo6 {
+    left: 1110px; 
+    top: -250px; 
+}
+
+/* Estilo del contenedor final */
+#contenedor_final {
+    background-color: rgb(90, 87, 87);
+    height: 100px;
+    width: 100%;
+    color: white;
+    overflow: hidden; /* Evita que se salga contenido */
+    position: relative;
+    bottom: 218px;
+}
+
+#h_final {
+    position: relative;
+    left: 150px;
+    top: 65px;
+}
+
+#p_final {
+    position: relative;
+    left: 280px;
+    top: 41px;
+}
+
+#p_final1 {
+    position: relative;
+    left: 550px;
+    top: 20px;
+}
+
+#p_final2 {
+    position: relative;
+    left: 750px;
+    top: -1px;
+}
+
+/* Estilo de las imágenes dentro del contenedor final */
+.img_final {
+    width: 20px;
+    height: 15px;
+    position: relative;
+    bottom: 10px;
+    margin-top: -30px;
+    left: 1000px;
+    padding: 10px;
+}
+
+/* Contenedor adicional para centrar elementos */
+.contenedor_final1 {
+    background-color: white;
+    height: 30px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    bottom: 218px;
+}
+
+/* Posicionamiento de párrafo dentro del contenedor_final1 */
+#p1 {
+    position: relative;
+    top: 5px;
+}

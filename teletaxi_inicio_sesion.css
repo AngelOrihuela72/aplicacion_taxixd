@@ -1,0 +1,280 @@
+#fondo_principal {
+    background-color: white;
+}
+#encabezado {
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    padding-top: 25px;
+}
+
+#xd{
+    height: 10px;
+    background: rgb(252, 248, 34);
+    border-radius: 160px 160px 160px 160px;
+    position: relative;
+    width:75%;
+    bottom: 85px;
+}
+
+#titulo {
+    text-align: left;
+    color: white;
+}
+
+.texto1{
+    font-size:x-large;
+}
+
+#ingresar_datos{
+    width: 300px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: gainsboro;
+    border: none;
+    font-size:medium;
+}
+
+*{
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#boton_iniciarsesion{
+    width: 300px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: black;
+    border: none;
+    position: relative;
+    top: 10px;
+}
+
+#textoiniciarsesion{
+    color: white;
+    position: relative;
+}
+
+#textoiniciarsesion:hover{
+    text-decoration:underline;
+    color: yellow;
+}
+
+#continuargoogle{
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: gainsboro;
+    border: none;
+    position: relative;
+    top: 10px;
+}
+
+#textogoogle{
+    position: relative;
+    bottom: 25px;
+}
+
+#textoapple{
+    position: relative;
+    bottom: 25px;
+}
+
+#textogoogle:hover{
+    text-decoration: underline;
+}
+
+#textoapple:hover{
+    text-decoration: underline;
+}
+
+#continuarapple{
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: gainsboro;
+    border: none;
+    position: relative;
+    top: 10px;
+}
+
+#imagen1{
+    width: 50px;
+    height: 30px;
+    position: relative;
+    right: 100px;
+    top: 1px;
+}
+
+#imagen2{
+    width: 50px;
+    height: 30px;
+    position: relative;
+    right: 100px;
+    top: 1px;
+}
+
+#iniciarqr{
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: gainsboro;
+    border: none;
+    position: relative;
+    top: 10px;
+}
+
+#imagen3{
+    width: 50px;
+    height: 30px;
+    position: relative;
+    right: 120px;
+    top: 3px;
+    border-radius: 20px;
+}
+
+#textox{
+    position: relative;
+    top: 10px;
+}
+
+#textox:hover{
+    text-decoration: underline;
+}
+
+#textoy{
+    position: relative;
+    top: 20px;
+}
+
+/* Contenedor décimo */
+.contenedor_decimo {
+    background-color: black;
+    color: white;
+    height: 450px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 60px;
+}
+
+#p_noveno {
+    position: relative;
+    top: 20px;
+    left: 150px;
+}
+
+#p_noveno2 {
+    position: relative;
+    left: 370px;
+    margin-top: -315px; 
+}
+
+#p_noveno3 {
+    position: relative;
+    left: 370px;
+}
+
+#p_noveno4 {
+    position: relative;
+    left: 650px; 
+    margin-top: -265px; 
+}
+
+#p_noveno5 {
+    position: relative;
+    left: 650px;
+}
+
+
+.contenedor_decimo2 {
+    background-color: rgb(255, 255, 255);
+    width: 3px;
+    height: 300px;
+    position: relative;
+    left: 970px;
+    margin-top: -320px;
+}
+
+
+.img_novena {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    position: relative;
+    left: 1050px;
+}
+
+
+.img_decimo2, .img_decimo3, .img_decimo4, #img_decimo5, #img_decimo6 {
+    width: 150px;
+    height: 50px;
+    position: relative;
+    left: 1025px;
+    top: -250px;
+    margin: 20px 0; 
+}
+
+#img_decimo6 {
+    left: 1110px; 
+    top: -250px; 
+}
+
+/* Estilo del contenedor final */
+#contenedor_final {
+    background-color: rgb(90, 87, 87);
+    height: 100px;
+    width: 100%;
+    color: white;
+    overflow: hidden; /* Evita que se salga contenido */
+}
+
+#h_final {
+    position: relative;
+    left: 150px;
+    top: 65px;
+}
+
+#p_final {
+    position: relative;
+    left: 280px;
+    top: 41px;
+}
+
+#p_final1 {
+    position: relative;
+    left: 550px;
+    top: 20px;
+}
+
+#p_final2 {
+    position: relative;
+    left: 750px;
+    top: -1px;
+}
+
+/* Estilo de las imágenes dentro del contenedor final */
+.img_final {
+    width: 20px;
+    height: 15px;
+    position: relative;
+    bottom: 10px;
+    margin-top: -30px;
+    left: 1000px;
+    padding: 10px;
+}
+
+/* Contenedor adicional para centrar elementos */
+.contenedor_final1 {
+    background-color: white;
+    height: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+/* Posicionamiento de párrafo dentro del contenedor_final1 */
+#p1 {
+    position: relative;
+    top: 5px;
+}
