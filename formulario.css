@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+   
+}
+
+body {
+  
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+header.menu-superior {
+    max-width: 100%;
+    position: relative;
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border-bottom: 10px solid yellow;
+    
+    
+}
+
+.menu-superior .logo h1 {
+    font-size: 24px;
+    position: relative;
+    top: 3px;
+
+}
+/* #logo_1{
+    height: 10px;
+    width: 100%;
+    background-color: rgb(255, 255, 0);
+    border-radius: 10px;   
+} */
+
+/* contenedor preguntas */
+section{
+    padding: 20px;
+}
+
+.formulario_contenedor {
+    background-color:white;
+    
+    padding: 20px;
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0,0.5);
+    border-left: 8px solid black;
+}
+.encabezado {
+    border-bottom: 2px solid #673ab7;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.encabezado .titulo_formu {
+    font-size: 28px;
+    color: #673ab7;
+    margin-bottom: 5px;
+}
+.encabezado .descripcion_titulo {
+    font-size: 14px;
+    color: #777;
+}
+.contenedor_info {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+     /* border: 1px solid #ddd;  */
+ 
+}
+.contenedor {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+     border: 1px solid #ddd; 
+ 
+}
+.contenedor label {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.contenedor input[type="radio"] {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+#uni{
+    color: #777;
+}
+
+.contenedor_unico {
+    direction: rtl; /* Orden inverso para que las estrellas se seleccionen de derecha a izquierda */
+    display: inline-flex;
+}
+.contenedor_unico input[type="radio"] {
+    display: none; /* Ocultamos los botones de radio */
+}
+.contenedor_unico label {
+    font-size: 2rem;
+    color: #ccc; /* Color de estrellas no seleccionadas */
+    cursor: pointer;
+}
+.contenedor_unico input[type="radio"]:checked ~ label {
+    color: black; /* Color de estrellas seleccionadas */
+}
+.contenedor_unico label:hover, .contenedor_unico label:hover ~ label {
+    color: black; /* Efecto al pasar el ratón por encima */
+}
+
+
+.boton_enviar {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.boton_enviar button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.boton_enviar button:hover {
+    background-color: yellow;
+    color: black;
+} 
+
+
+/* Cambiar el color y estilo del borde de los fieldset */
+fieldset {
+    border: 2px solid  #ddd ; 
+    padding: 10px;
+}
+
+
+/* legend {
+    color: #FF5733; 
+    font-weight: bold;
+} */

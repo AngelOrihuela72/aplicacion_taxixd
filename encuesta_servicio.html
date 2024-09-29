@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="encuesta_servicio.css">
+</head>
+<body>
+
+
+    <header>
+            <div id="encabezado">
+                <h1 id="titulo_encabezado">TELETAXI</h1>
+            </div>
+            <div id="linea_amarilla"></div>
+            <br>
+    </header>
+
+
+    <section>
+        <center>
+            <form action="respuesta_encuesta_satisfaccion.html" method="get">
+                <div id="cuadro_principal">
+                    <br>
+                        <h1>Encuesta de Satisfaccion del Servicio de TELETAXI</h1>
+                        <br>
+                        <h3>1. Informacion General</h3>
+                        <br>
+                        <div>
+                            <div class="posicion_general">
+                                <label for="Nombre">Nombre:</label>
+                                <input type="text" name="Nombre" placeholder="Ingresa tu nombre">
+                            </div>
+                            <br>
+                            <div class="posicion_general">
+                                <label for="Fecha">Fecha:</label>
+                                <input type="text" name="Fecha" placeholder="Ingresa la fecha">
+                            </div>
+                            <br>
+                            <div class="posicion_general">
+                                <label for="Serviciorecibido">Servicio Recibido:</label>
+                                <input type="text" name="Serviciorecibido" placeholder="Servicio recibido">
+                            </div>
+                        </div>
+                        <br>
+                        <h3>2. ¿Como calificarias tu nivel de satisfacción general con nuestro producto/servicio?</h3>
+                        <br>
+                        <div>
+                            <div class="posicion_general">
+                                <input type="radio" name="nivel_satisfaccion">Muy satisfecho/a
+                            </div>
+                            <div class="posicion_general"> 
+                                <input type="radio" name="nivel_satisfaccion">Satisfecho/a
+                            </div>
+                            <div class="posicion_general">
+                                <input type="radio" name="nivel_satisfaccion">Neutral
+                            </div>
+                            <div class="posicion_general">
+                                <input type="radio" name="nivel_satisfaccion">Insatisfecho/a
+                            </div>
+                            <div class="posicion_general">
+                                <input type="radio" name="nivel_satisfaccion">Muy insatisfecho/a
+                            </div>
+                        </div>
+                        <br>
+                        <h3>3. ¿Que tan probable es que vuelvas a comprar nuestro producto/servicio? (Del 1 al 5, siendo 1 "poco probable" y 5 "muy probable")</h3>
+                        <br>
+                        <div>
+                            <div class="posicion_general">
+                                <input type="range" name="nivel_satisfaccion">1 - 5 (Del 1 al 5, siendo 1 "poco probable" y 5 "muy probable")
+                            </div>
+                        </div>
+                        <br>
+                        <h3>4. ¿Como calificarias la calidad de nuestro producto/servicio?</h3>
+                        <br>
+                        <div>
+                            <div class="posicion_general">
+                                <input type="radio" name="nivel_satisfaccion">Excelente
+                            </div>
+                            <div class="posicion_general"> 
+                                <input type="radio" name="nivel_satisfaccion">Buena
+                            </div>
+                            <div class="posicion_general">
+                                <input type="radio" name="nivel_satisfaccion">Regular
+                            </div>
+                            <div class="posicion_general">
+                                <input type="radio" name="nivel_satisfaccion">Mala
+                            </div>
+                            <div class="posicion_general">
+                                <input type="radio" name="nivel_satisfaccion">Muy mala
+                            </div>
+                        </div>
+                        <br>
+                        <h3>5. ¿Que caracteristicas del producto/servicio consideras mas valiosas? (Selecciona todas las que apliquen)</h3>
+                        <br>
+                        <div>
+                            <div class="posicion_general">
+                                <input type="checkbox" name="nivel_satisfaccion">Calidad
+                            </div>
+                            <div class="posicion_general"> 
+                                <input type="checkbox" name="nivel_satisfaccion">Precio
+                            </div>
+                            <div class="posicion_general">
+                                <input type="checkbox" name="nivel_satisfaccion">Facilidad de uso
+                            </div>
+                            <div class="posicion_general">
+                                <input type="checkbox" name="nivel_satisfaccion">Variedad
+                            </div>
+                            <div class="posicion_general">
+                                <input type="checkbox" name="nivel_satisfaccion">Atencion al cliente
+                            </div>
+                            <div class="posicion_general">
+                                <textarea name="nivel_satisfaccion" placeholder="Otro" cols="20px" rows="2px"></textarea>
+                            </div>
+                        </div>
+                        <br>
+                        <h3>6. ¿Tuviste algun problema durante el proceso?</h3>
+                        <br>
+                        <div>
+                            <div class="posicion_general">
+                                <select name="opcion" required>
+                                    <option value="">Selecciona una opcion</option>
+                                    <option value="android">Si</option>
+                                    <option value="ios">No</option>
+                                </select>
+                            </div>
+                            <br>
+                            <p class="posicion_general">Si respondiste "Si" en la pregunta anterior, describe brevemente el problema</p>
+                            <br>
+                            <div class="posicion_general">
+                                <textarea name="nivel_satisfaccion" placeholder="¿Cual?" cols="20px" rows="2px"></textarea>
+                            </div>
+                        </div>
+                        <br>
+                        <h3>-Calificanos-</h3>
+                        <br>
+                        <div>
+                            <div class="posicion_general">
+                                <label for="pregunta8">¿Como calificarias esta app en comparacion con otras similares?</label>
+                                <br>
+                                <div class="contenedor_unico">
+                                    <input type="radio" id="star5" name="comparacion" value="5" required>
+                                    <label for="star5">★</label>
+                                    <input type="radio" id="star4" name="comparacion" value="4">
+                                    <label for="star4">★</label>
+                                    <input type="radio" id="star3" name="comparacion" value="3">
+                                    <label for="star3">★</label>
+                                    <input type="radio" id="star2" name="comparacion" value="2">
+                                    <label for="star2">★</label>
+                                    <input type="radio" id="star1" name="comparacion" value="1">
+                                    <label for="star1">★</label>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="boton_enviar">
+                            <button type="submit" >Enviar </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </center>
+    </section>
+
+    <script src="formulario.js"></script>
+
+</body>
+</html>

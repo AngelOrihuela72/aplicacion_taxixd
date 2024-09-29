@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario TELETAXI</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+     <!-- menú superior -->
+    <header class="menu-superior">
+        <div class="logo">
+            <h1>TELETAXI</h1>
+        </div>
+    </header>
+    <div id="logo_1"></div>
+
+<section>
+     <!-- Contenedor del formulario -->
+ <form action="respuesta_encuesta_satisfaccion.html" method="get">
+    <div class="formulario_contenedor">
+        <!-- encabezado -->
+     <div class="encabezado">
+         <div class="titulo_formu">FORMULARIO TELETAXI</div>
+         <div class="descripcion_titulo">Este formulario es para recibir material de apoyo gratuito. Tu información de contacto solo se usará con este propósito</div>
+     </div>
+     <!--  datos personales -->
+     <fieldset>
+        <legend>Información Personal</legend>
+        <div class="contenedor_info">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre..." required>
+            <br><br>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" placeholder="edad..." required>
+            <br><br>
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero" required>
+                <option value="">Selecciona tu género</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+        </div>
+     </fieldset>
+     <br>
+
+     <!--  datos sobre el dispositivo -->
+     <fieldset>
+        <legend>Datos del Dispositivo</legend>
+        <div class="contenedor_info">
+            <label for="dispositivo">Dispositivo:</label>
+            <select id="dispositivo" name="dispositivo" required>
+                <option value="">Selecciona tu dispositivo</option>
+                <option value="android">Android</option>
+                <option value="ios">iOS</option>
+                <option value="otro">Otro</option>
+            </select>
+        </div>
+     </fieldset>
+     <br>
+    
+
+     <!-- 2 -->
+     <div class="contenedor">
+         <label for="facilidad-uso">¿Como fue tu experiencia en la facilidad de uso de TELETAXI?</label>
+         <br><br>
+         <input type="range" id="facilidad-uso" name="facilidad-uso" min="1" max="5" step="1" required>
+         <span>1  (Fácil) - 5 (Difícil)</span>
+     </div>
+
+     <!-- 3 -->
+     <div class="contenedor">
+        <label for="facilidad-busqueda">¿Encontraste fácilmente lo que buscabas?</label>
+        <br><br>
+            <input type="range" id="facilidad-busqueda" name="facilidad-busqueda" min="1" max="5" step="1" required>
+            <span>1 (Sí) - 5 (No)</span>
+    </div>
+<!-- 4 -->
+<div class="contenedor">
+    <label for="errores">¿Experimentaste errores o cierres inesperados?</label>
+    <br><br>
+    <input type="radio" name="errores" value="Opción 1"> Nunca
+    <br>
+    <input type="radio" name="errores" value="Opción 1"> Ocacionalmente
+    <br>
+    <input type="radio" name="errores" value="Opción 1"> frecuentemente
+    <br>
+    <input type="radio" name="errores" value="Opción 1"> siempre
+    
+    
+</div>
+<!-- 5 -->
+<div class="contenedor">
+    <label for="funciones-mas-usadas">¿Cuáles son las funciones que usas más frecuentemente?</label>
+    <br>
+    <textarea id="funciones-mas-usadas" name="funciones-mas-usadas" rows="3" placeholder="Escribe tus funciones favoritas"></textarea>
+</div>
+<!-- 6 -->
+<div class="contenedor">
+    <label for="recomendacion">¿Hay alguna función que te gustaría ver en la app?</label>
+    <p id="uni">Opcion multiple</p>
+    <br>
+    <input type="checkbox" name="recomendacion" > Funciones offline
+    <br>
+    <input type="checkbox" name="recomendacion" > Un sistema de soporte en vivo o chat de ayuda
+    <br>
+    <input type="checkbox" name="recomendacion" > Una sección de recomendaciones personalizadas
+    <br>
+    <input type="checkbox" name="recomendacion" >Contar con un modo oscuro
+    <br>
+    <input type="checkbox" name="recomendacion" >Una opción de sincronización con otros dispositivos
+    
+
+</div>
+<!-- 7 -->
+<div class="contenedor">
+    <label for="diseno">¿Qué te parece el diseño visual de la app?</label>
+<br><br>
+<input type="radio" id="diseno" name="diseno" required>Pobre
+<br>
+<input type="radio" id="diseno" name="diseno" required>Bueno
+<br>
+<input type="radio" id="diseno" name="diseno" required>Mas o menos
+<br>
+<input type="radio" id="diseno" name="diseno" required>Exelente
+</div>
+
+<!-- 8 -->
+<div class="contenedor">
+    <label for="pregunta8">¿Tuviste alguna dificultad al reservar un taxi?</label>
+    <br><br>
+    <input type="radio" id="diseno" name="pregunta8" required>SI
+    <br>
+    <input type="radio" id="diseno" name="pregunta8" required>NO
+    <br>
+    <textarea  name="pregunta8" rows="3" placeholder="Por que"></textarea>
+
+
+
+
+    
+</div>
+
+<!-- 9 -->
+<div class="contenedor">
+    <label for="pregunta9">¿Con qué frecuencia usas la app para reservar taxis?</label>
+    <br><br>
+    <input type="radio" id="pregunta9" name="pregunta9" value="Opción 1"> Diariamente
+    <br>
+    <input type="radio" id="pregunta9" name="pregunta9" value="Opción 1"> Semanalmente
+    <br>
+    <input type="radio" id="pregunta9" name="pregunta9" value="Opción 1"> Mensualmente
+    <br>
+    <input type="radio" id="pregunta9" name="pregunta9" value="Opción 1"> Rara vez
+
+</div>
+<!-- 10 -->
+<div class="contenedor">
+    <label for="pregunta8">¿Cómo calificarías esta app en comparación con otras similares?</label>
+    <br>
+    <div class="contenedor_unico">
+        <input type="radio" id="star5" name="comparacion" value="5" required>
+        <label for="star5">★</label>
+
+        <input type="radio" id="star4" name="comparacion" value="4">
+        <label for="star4">★</label>
+
+        <input type="radio" id="star3" name="comparacion" value="3">
+        <label for="star3">★</label>
+
+        <input type="radio" id="star2" name="comparacion" value="2">
+        <label for="star2">★</label>
+
+        <input type="radio" id="star1" name="comparacion" value="1">
+        <label for="star1">★</label>
+    </div>
+</div>
+
+<!-- Botón enviar -->
+     <!-- <div class="boton_enviar">
+  
+         <button type="submit"  onclick="window.location.href='pag_usuario.html'">Enviar </button>
+     </div> -->
+     <div class="boton_enviar">
+        <button type="submit">Enviar</button>
+    </div>
+    
+ </div>
+</form>
+
+</section>
+
+<script src="formulario.js"></script>
+
+
+</body>
+</html>
