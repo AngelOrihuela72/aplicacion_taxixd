@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+#encabezado #titulo_encabezado h1{
+    font-size: 24px;
+    position: relative;
+    top: 3px;
+}
+
+#encabezado{
+    max-width: 100%;
+    position: relative;
+    position: sticky;
+    top: 0; /* Se quedará pegado cuando llegue a 0px desde la parte superior */
+    z-index: 1000; /* Asegura que el menú esté por encima del contenido */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+
+}
+
+#linea_amarilla{
+    height: 10px;
+    width: 100%;
+    background-color: yellow;
+    position: relative;
+    border-radius: 10px;
+}
+
+#cuadro_principal1{
+    width: 600px;
+    height: 400px;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: rgb(247, 245, 245);
+    box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.5);
+}
+
+.boton1{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.boton1 button{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+.boton1 button:hover {
+    background-color: yellow;
+    color: black;
+}
